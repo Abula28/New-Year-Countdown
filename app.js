@@ -2,6 +2,8 @@ let days = document.querySelector('.days')
 let hours = document.querySelector('.hours')
 let minutes = document.querySelector('.minutes')
 let seconds = document.querySelector('.seconds')
+let timeCard = document.querySelector('.time-cards')
+let minus = document.querySelector('.minus')
 
 let currentYear = new Date().getFullYear()
 
@@ -21,6 +23,11 @@ function countDown(){
     hours.innerHTML = h;
     minutes.innerHTML = m;
     seconds.innerHTML = s;
+
+    if(d == 0 && h == 0 && m == 0 && s == 0){
+        timeCard.style.display = "none"
+        minus.style.display = "none"
+    }
 }
 
 

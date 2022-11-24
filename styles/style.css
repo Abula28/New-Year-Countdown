@@ -31,7 +31,7 @@ body {
   align-items: center;
   flex-direction: column;
 }
-.main h1 {
+.main .header {
   font-size: 90px;
   font-weight: 100;
   line-height: 135px;
